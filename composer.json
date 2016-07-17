@@ -1,0 +1,36 @@
+{
+    "name": "lyrasoft/earth",
+    "description": "Home Land of LYRASOFT",
+    "homepage": "https://github.com/lyrasoft/earth",
+    "license": "GNU Lesser General Public License",
+    "minimum-stability": "dev",
+    "authors": [
+        {
+            "name": "Simon Asika",
+            "email": "asika32764@gmail.com"
+        }
+    ],
+    "require": {
+        "windwalker/core" : "~3.0",
+        "fzaninotto/faker": "~1.0",
+        "swiftmailer/swiftmailer": "~5.0",
+        "lyrasoft/luna": "~1.1"
+    },
+    "require-dev": {
+    },
+    "autoload": {
+        "psr-4": {
+            "": "src/"
+        }
+    },
+    "scripts": {
+        "post-create-project-cmd": [
+            "Windwalker\\Composer\\StarterInstaller::rootInstall"
+        ]
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master" : "1.x-dev"
+        }
+    }
+}

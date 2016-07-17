@@ -1,0 +1,21 @@
+# Image
+image:
+    pattern: /image(/id)
+    controller: Image
+    extra:
+        layout: image
+        menu:
+            mainmenu: images
+
+# Images
+images:
+    pattern: /images(/page)
+    controller: Images
+    action:
+        post: CopyController
+        patch: BatchController
+        put: FilterController
+    extra:
+        layout: images
+        menu:
+            mainmenu: images
