@@ -8,9 +8,6 @@
 # Composer
 /vendor
 
-# Remove this line when you start a project
-composer.lock
-
 # Windwalker
 /etc/secret.yml
 
