@@ -23,9 +23,9 @@
         }
     </style>
 <div class="container home-item">
-    <div id="image-banner" style="margin-top: 50px">
+    <div id="image-banner" class="text-center" style="margin-top: 50px">
         @foreach ($images as $image)
-            <div class="img-box pull-left" style="margin-right: 15px; margin-bottom: 15px;">
+            <div class="img-box" style="margin-right: 15px; margin-bottom: 15px; display: inline-block;">
                 <img height="150" width="150" src="{{ \Pavatar\Image\PavatarHelper::getImageUrl(150, $image->id) }}" alt="Avatar">
             </div>
         @endforeach

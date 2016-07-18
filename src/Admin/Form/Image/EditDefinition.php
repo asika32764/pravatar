@@ -57,6 +57,7 @@ class EditDefinition extends AbstractFieldDefinition
 			// State
 			$this->radio('state')
 				->label('State')
+				->defaultValue(1)
 				->setClass('btn-group')
 				->option('Published', 1)
 				->option('Unpublished', 0);
