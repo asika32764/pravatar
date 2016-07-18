@@ -69,6 +69,8 @@ $server->setHandler(function (ServerRequestInterface $request,
 	$response = $response->withHeader('content-type', 'image/jpeg')
 		->withStatus(200);
 
+	$server->cachable($server::CACHE_DISABLE);
+
 	return $response;
 });
 
