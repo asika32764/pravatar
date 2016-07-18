@@ -1,0 +1,8 @@
+# Home
+home:
+    pattern: /
+    controller: Home
+    extra:
+        layout: home
+        active:
+            manimenu: homes

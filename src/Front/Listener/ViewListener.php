@@ -28,13 +28,6 @@ class ViewListener
 	 */
 	public function onViewBeforeRender(Event $event)
 	{
-		if (LunaHelper::isAdmin())
-		{
-			return;
-		}
 
-		$view = $event['view'];
-
-		$view['categories'] = CategoryHelper::getAvailableCategories('article');
 	}
 }

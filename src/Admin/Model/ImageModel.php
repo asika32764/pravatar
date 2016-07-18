@@ -8,6 +8,7 @@
 
 namespace Admin\Model;
 
+use Pavatar\Image\PavatarHelper;
 use Phoenix\Model\AdminModel;
 use Windwalker\Data\DataInterface;
 use Windwalker\Record\Record;
@@ -56,7 +57,7 @@ class ImageModel extends AdminModel
 	 */
 	protected function postGetItem(DataInterface $item)
 	{
-		// Do some stuff
+		$item->url = PavatarHelper::getImageUrl(1000, $item->id);
 	}
 
 	/**

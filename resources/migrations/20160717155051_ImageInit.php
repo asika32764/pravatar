@@ -26,7 +26,6 @@ class ImageInit extends AbstractMigration
 		$this->createTable(Table::IMAGES, function(Schema $schema)
 		{
 			$schema->primary('id')->comment('Primary Key');
-			$schema->varchar('url')->comment('URL');
 			$schema->tinyint('state')->signed(true)->comment('0: unpublished, 1:published');
 			$schema->varchar('source')->comment('The source.');
 		});

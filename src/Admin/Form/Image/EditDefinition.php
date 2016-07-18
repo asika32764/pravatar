@@ -53,6 +53,13 @@ class EditDefinition extends AbstractFieldDefinition
 			// Source
 			$this->text('source')
 				->label('Source');
+
+			// State
+			$this->radio('state')
+				->label('State')
+				->setClass('btn-group')
+				->option('Published', 1)
+				->option('Unpublished', 0);
 		});
 	}
 }

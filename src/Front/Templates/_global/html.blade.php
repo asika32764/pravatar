@@ -29,30 +29,13 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="{{ $router->route('home') }}">Windwalker</a>
+                <a class="navbar-brand" href="{{ $router->route('home') }}">Pravatar</a>
             </div>
             <div class="collapse navbar-collapse">
                 <ul class="nav navbar-nav">
                      @section('nav')
-                        <li class="active"><a href="{{ $router->route('home') }}">Home</a></li>
+                        {{--<li class="active"><a href="{{ $router->route('home') }}">Home</a></li>--}}
                      @show
-
-                     <li class="dropdown">
-                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                             Category
-                             <span class="caret"></span>
-                         </a>
-                         <ul class="dropdown-menu">
-                             @foreach ($categories as $category)
-                                 <li>
-                                     <a href="{{ $router->route('article_category', array('path' => $category->path)) }}">
-                                         {{ str_repeat('-', $category->level - 1) }}
-                                         {{ $category->title }}
-                                     </a>
-                                 </li>
-                             @endforeach
-                         </ul>
-                     </li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     {{-- <li class="pull-right"><a href="{{ $uri->path }}/admin">Admin</a></li> --}}
