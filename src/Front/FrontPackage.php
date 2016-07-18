@@ -60,6 +60,7 @@ class FrontPackage extends AbstractPackage
 
 		HtmlHeader::setSiteName('Pravatar');
 		HtmlHeader::addMetadata('description', 'CC0 Avatar placeholders');
+		HtmlHeader::addOpenGraph('og:image', 'https://cloud.githubusercontent.com/assets/1639206/16906141/7b361584-4ce4-11e6-86f2-e1b91c4f3442.jpg');
 	}
 
 	/**
