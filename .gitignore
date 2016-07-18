@@ -10,6 +10,7 @@
 
 # Windwalker
 /etc/secret.yml
+/resources/pavatar/*
 
 #Test
 /phpunit.xml

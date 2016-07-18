@@ -29,13 +29,14 @@ $server->setHandler(function (ServerRequestInterface $request,
 	$route = $server->uri->route;
 	$route = explode('/', $route)[0];
 
-	$query = $request->getUri()->getQuery();
+	$query = $request->getQueryParams();
 	$img = isset($query['img']) ? $query['img'] : null;
 
 	if ($img)
 	{
 		$file = \Pavatar\Image\PavatarHelper::getImagePath($img);
 	}
+
 	else
 	{
 		$files = glob(\Pavatar\Image\PavatarHelper::getResourceFolder() . '/*.jpg');
