@@ -40,7 +40,7 @@
             <div class="col-md-6 col-md-offset-3">
                 <h2 class="text-center">Random Avatar</h2>
                 <pre><code>http://{{ $host }}/<strong>{size}</strong></code></pre>
-                <h4 class="text-center">Example <a href="http://{{ $host }}/300">See</a></h4>
+                <h4 class="text-center">Example <a href="http://{{ $host }}/300" target="_blank">See</a></h4>
                 <pre><code>http://{{ $host }}/300</code></pre>
                 <blockquote>
                     Max size is <code>1000</code>
