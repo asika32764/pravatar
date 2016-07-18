@@ -61,7 +61,7 @@
                     <hr />
 
                     <footer>
-                        &copy; Windwalker {{ $datetime->format('Y') }}
+                        &copy; Pravatar {{ $datetime->format('Y') }}
                     </footer>
                 </div>
             </div>

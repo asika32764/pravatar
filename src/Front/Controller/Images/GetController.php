@@ -6,11 +6,11 @@
  * @license    GNU General Public License version 2 or later.
  */
 
-namespace Front\Controller\Home;
+namespace Front\Controller\Images;
 
-use Front\Model\HomeModel;
-use Front\View\Home\HomeHtmlView;
-use Phoenix\Controller\Display\DisplayController;
+use Front\Model\ImagesModel;
+use Front\View\Images\ImagesHtmlView;
+use Phoenix\Controller\Display\ListDisplayController;
 use Windwalker\Core\Model\ModelRepository;
 
 /**
@@ -18,42 +18,63 @@ use Windwalker\Core\Model\ModelRepository;
  * 
  * @since  1.0
  */
-class GetController extends DisplayController
+class GetController extends ListDisplayController
 {
 	/**
 	 * Property name.
 	 *
 	 * @var  string
 	 */
-	protected $name = 'home';
+	protected $name = 'images';
 
 	/**
 	 * Property itemName.
 	 *
 	 * @var  string
 	 */
-	protected $itemName = 'home';
+	protected $itemName = 'image';
 
 	/**
 	 * Property listName.
 	 *
 	 * @var  string
 	 */
-	protected $listName = 'homes';
+	protected $listName = 'images';
 
 	/**
 	 * Property model.
 	 *
-	 * @var  HomeModel
+	 * @var  ImagesModel
 	 */
 	protected $model;
 
 	/**
 	 * Property view.
 	 *
-	 * @var  HomeHtmlView
+	 * @var  ImagesHtmlView
 	 */
 	protected $view;
+
+	/**
+	 * Property ordering.
+	 *
+	 * @var  string
+	 */
+	protected $defaultOrdering = 'image.id';
+
+	/**
+	 * Property direction.
+	 *
+	 * @var  string
+	 */
+	protected $defaultDirection = 'DESC';
+
+	/**
+	 * Property limit.
+	 *
+	 * @var  int
+	 */
+	protected $limit = 0;
 
 	/**
 	 * prepareExecute
@@ -66,7 +87,7 @@ class GetController extends DisplayController
 	}
 
 	/**
-	 * prepareModelState
+	 * prepareUserState
 	 *
 	 * @param   ModelRepository $model
 	 *

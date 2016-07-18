@@ -1,0 +1,17 @@
+# Image
+image:
+    pattern: /image/(id)
+    controller: Image
+    extra:
+        layout: image
+        active:
+            manimenu: images
+
+# Images
+images:
+    pattern: /images(/page)
+    controller: Images
+    extra:
+        layout: images
+        active:
+            manimenu: images
