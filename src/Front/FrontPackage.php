@@ -8,6 +8,7 @@
 
 namespace Front;
 
+use Phoenix\Html\HtmlHeader;
 use Phoenix\Language\TranslatorHelper;
 use Phoenix\Script\BootstrapScript;
 use Symfony\Component\Yaml\Yaml;
@@ -56,6 +57,9 @@ class FrontPackage extends AbstractPackage
 
 		// Language
 		TranslatorHelper::loadAll($this, 'ini');
+
+		HtmlHeader::setSiteName('Pravatar');
+		HtmlHeader::addMetadata('description', 'CC0 Avatar placeholders');
 	}
 
 	/**

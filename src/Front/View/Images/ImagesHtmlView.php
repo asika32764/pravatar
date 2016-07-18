@@ -44,7 +44,7 @@ class ImagesHtmlView extends ListView
 	 *
 	 * @return  static
 	 */
-	public function setTitle($title = null)
+	public function setTitle($title = 'All Avatars')
 	{
 		return parent::setTitle($title);
 	}

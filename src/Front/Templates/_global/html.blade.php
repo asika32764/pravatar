@@ -29,7 +29,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="{{ $router->route('home') }}">Pravatar</a>
+                <a class="navbar-brand" href="{{ $router->route('home') }}">Pravatar <small>CC0 Avatar placeholders</small></a>
             </div>
             <div class="collapse navbar-collapse">
                 <ul class="nav navbar-nav">
