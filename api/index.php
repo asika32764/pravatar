@@ -45,9 +45,7 @@ class Application
 	 */
 	public function execute()
 	{
-		$this->server
-			->cachable(WebHttpServer::CACHE_ENABLE)
-			->listen();
+		$this->server->listen();
 	}
 
 	/**
@@ -73,6 +71,8 @@ class Application
 		if ($img)
 		{
 			$file = \Pavatar\Image\PavatarHelper::getImagePath($img);
+
+			$this->server->cachable(WebHttpServer::CACHE_ENABLE);
 		}
 		// Unique ID
 		elseif ($u)
@@ -84,6 +84,8 @@ class Application
 			$id = (int) gmp_strval(gmp_mod($u, $total)) + 1;
 
 			$file = \Pavatar\Image\PavatarHelper::getImagePath($id);
+
+			$this->server->cachable(WebHttpServer::CACHE_ENABLE);
 		}
 		// Random Images
 		else
@@ -91,6 +93,8 @@ class Application
 			$files = glob(\Pavatar\Image\PavatarHelper::getResourceFolder() . '/*.jpg');
 
 			$file = $files[rand(0, count($files) - 1)];
+
+			$this->server->cachable(WebHttpServer::CACHE_DISABLE);
 		}
 
 		if (!is_file($file))
