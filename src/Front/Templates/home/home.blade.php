@@ -39,9 +39,9 @@
         <div class="row">
             <div class="col-md-6 col-md-offset-3">
                 <h2 class="text-center">Random Avatar</h2>
-                <pre><code>http://{{ $host }}/<strong>{size}</strong></code></pre>
-                <h4 class="text-center">Example <a href="http://{{ $host }}/300" target="_blank">See</a></h4>
-                <pre><code>http://{{ $host }}/300</code></pre>
+                <pre><code>{{ $host }}/<strong>{size}</strong></code></pre>
+                <h4 class="text-center">Example <a href="{{ $host }}/300" target="_blank">See</a></h4>
+                <pre><code>{{ $host }}/300</code></pre>
                 <blockquote>
                     Max size is <code>1000</code>
                 </blockquote>
@@ -53,7 +53,7 @@
         <div class="row">
             <div class="col-md-6 col-md-offset-3">
                 <h2 class="text-center">Direct Image ID</h2>
-                <pre><code>http://{{ $host }}/150<strong>?img=3</strong></code></pre>
+                <pre><code>{{ $host }}/150<strong>?img=3</strong></code></pre>
                 <p>
                     See all <a href="@route('images')">Images</a>
                 </p>
@@ -65,7 +65,7 @@
         <div class="row">
             <div class="col-md-6 col-md-offset-3">
                 <h2 class="text-center">Unique ID</h2>
-                <pre><code>http://{{ $host }}/150<strong>?u=123</strong><br>http://{{ $host }}/150<strong>?u=a042581f4e29026704d</strong></code></pre>
+                <pre><code>{{ $host }}/150<strong>?u=123</strong><br>{{ $host }}/150<strong>?u=a042581f4e29026704d</strong></code></pre>
                 <blockquote>
                     Add a hash then always get same image
                 </blockquote>
