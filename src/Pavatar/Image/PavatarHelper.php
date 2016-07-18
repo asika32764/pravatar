@@ -64,11 +64,13 @@ class PavatarHelper
 
 		if ($config->exists('api.host'))
 		{
-			return $config->get('api.host');
+			$host = $config->get('api.host');
 		}
-
-		$uri = Ioc::getUriData();
-		$host = rtrim($uri->host . $uri->path, '/');
+		else
+		{
+			$uri = Ioc::getUriData();
+			$host = rtrim($uri->host . $uri->path, '/');
+		}
 
 		if (StringHelper::endsWith($host, 'www'))
 		{
