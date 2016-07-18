@@ -36,6 +36,7 @@ class HomeHtmlView extends AbstractPhoenixHtmView
 		parent::prepareData($data);
 
 		$data->images = $this->model->getImages();
+		$data->host = $this->package->app->get('api.host', 'i.pravatar.cc');
 	}
 
 	/**
