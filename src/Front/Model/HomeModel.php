@@ -46,7 +46,7 @@ class HomeModel extends DatabaseModelRepository
 	{
 		return $this->getDataMapper()
 			->order('RAND()')
-			->limit(30)
+			->limit(12)
 			->find(['state' => 1]);
 	}
 }
