@@ -8,6 +8,8 @@
 
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
+use Windwalker\Http\Helper\ServerHelper;
+use Windwalker\Http\HttpClient;
 use Windwalker\Http\WebHttpServer;
 use Windwalker\IO\Input;
 
@@ -59,6 +61,8 @@ class Application
 	 */
 	public function doExecute(ServerRequestInterface $request, ResponseInterface $response, callable $error = null)
 	{
+		$this->analytics();
+
 		$route = $this->server->uri->route;
 		$route = explode('/', $route)[0];
 
@@ -126,6 +130,28 @@ class Application
 			->withStatus(200);
 
 		return $response;
+	}
+
+	/**
+	 * analytics
+	 *
+	 * @return  ResponseInterface
+	 */
+	protected function analytics()
+	{
+		$data = [
+			'v' => 1,
+			'tid' => 'UA-48372917-7',
+			't' => 'pageview',
+			'dp' => ServerHelper::getValue($this->server->getRequest()->getServerParams(), 'REQUEST_URI'),
+			'dh' => $this->server->getRequest()->getUri()->getHost(),
+		];
+
+		$http = new HttpClient;
+		
+		$r = $http->post('https://www.google-analytics.com/collect', $data);
+		
+		show($r);exit(' @Checkpoint');
 	}
 }
 
