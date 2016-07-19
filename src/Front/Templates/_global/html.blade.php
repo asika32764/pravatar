@@ -53,7 +53,7 @@
     @yield('content', 'Content')
 
     @section('copyright')
-    <div id="copyright">
+    <div id="copyright" style="margin-bottom: 10px">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -61,7 +61,7 @@
                     <hr />
 
                     <footer>
-                        &copy; Pravatar {{ $datetime->format('Y') }}
+                        &copy; Pravatar by <a href="https://lyrasoft.net">LYRASOFT</a> {{ $datetime->format('Y') }}
                     </footer>
                 </div>
             </div>
