@@ -136,7 +136,7 @@ class Application
 	 *
 	 * @return  ResponseInterface
 	 */
-	protected function __destruct()
+	public function __destruct()
 	{
 		$data = [
 			'v' => 1,
