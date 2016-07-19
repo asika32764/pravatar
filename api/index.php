@@ -62,8 +62,6 @@ class Application
 	 */
 	public function doExecute(ServerRequestInterface $request, ResponseInterface $response, callable $error = null)
 	{
-		$this->analytics();
-
 		$route = $this->server->uri->route;
 		$route = explode('/', $route)[0];
 
@@ -138,13 +136,13 @@ class Application
 	 *
 	 * @return  ResponseInterface
 	 */
-	protected function analytics()
+	protected function __destruct()
 	{
 		$data = [
 			'v' => 1,
 			'tid' => 'UA-48372917-7',
 			't' => 'pageview',
-			'cid' => Uuid::v4(),
+			'cid' => '71a51328-2af3-489d-93d7-594d5a432873',
 			'dp' => ServerHelper::getValue($this->server->getRequest()->getServerParams(), 'REQUEST_URI'),
 			'dh' => $this->server->getRequest()->getUri()->getHost(),
 		];
