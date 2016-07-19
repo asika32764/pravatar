@@ -149,9 +149,7 @@ class Application
 
 		$http = new HttpClient;
 		
-		$r = $http->post('https://www.google-analytics.com/collect', $data);
-		
-		show($r);exit(' @Checkpoint');
+		return $http->post('https://www.google-analytics.com/collect', $data);
 	}
 }
 
