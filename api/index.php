@@ -6,6 +6,7 @@
  * @license    GNU Lesser General Public License version 3 or later. see LICENSE
  */
 
+use Phoenix\Uuid\Uuid;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
 use Windwalker\Http\Helper\ServerHelper;
@@ -143,6 +144,7 @@ class Application
 			'v' => 1,
 			'tid' => 'UA-48372917-7',
 			't' => 'pageview',
+			'cid' => Uuid::v4(),
 			'dp' => ServerHelper::getValue($this->server->getRequest()->getServerParams(), 'REQUEST_URI'),
 			'dh' => $this->server->getRequest()->getUri()->getHost(),
 		];
