@@ -61,7 +61,7 @@
                     <hr />
 
                     <footer>
-                        &copy; Pravatar by <a href="https://lyrasoft.net">LYRASOFT</a> {{ $datetime->format('Y') }}
+                        &copy; Pravatar - made by <a href="https://simular.co" target="_blank">Simular</a> {{ $datetime->format('Y') }}
                     </footer>
                 </div>
             </div>
