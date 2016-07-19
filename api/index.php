@@ -138,13 +138,17 @@ class Application
 	 */
 	public function __destruct()
 	{
+		$servers = $this->server->getRequest()->getServerParams();
+
 		$data = [
-			'v' => 1,
+			'v'   => 1,
 			'tid' => 'UA-48372917-7',
-			't' => 'pageview',
+			't'   => 'pageview',
 			'cid' => Uuid::v4(),
-			'dp' => ServerHelper::getValue($this->server->getRequest()->getServerParams(), 'REQUEST_URI'),
-			'dh' => $this->server->getRequest()->getUri()->getHost(),
+			'dp'  => ServerHelper::getValue($servers, 'REQUEST_URI'),
+			'dh'  => $this->server->getRequest()->getUri()->getHost(),
+			'uip' => ServerHelper::getValue($servers, 'REMOTE_ADDR'),
+			'ua'  => ServerHelper::getValue($servers, 'HTTP_USER_AGENT')
 		];
 
 		$http = new HttpClient;
