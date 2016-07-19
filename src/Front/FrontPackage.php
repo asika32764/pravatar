@@ -58,7 +58,7 @@ class FrontPackage extends AbstractPackage
 		// Language
 		TranslatorHelper::loadAll($this, 'ini');
 
-		HtmlHeader::setSiteName('Pravatar - CC0 Avatar placeholders');
+		HtmlHeader::setSiteName('Pravatar - CC0 Avatar Placeholders');
 		HtmlHeader::addMetadata('description', 'Generate fake avatars to fill your sample application.');
 		HtmlHeader::addOpenGraph('og:image', 'https://cloud.githubusercontent.com/assets/1639206/16906141/7b361584-4ce4-11e6-86f2-e1b91c4f3442.jpg');
 	}
