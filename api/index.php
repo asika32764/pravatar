@@ -142,7 +142,7 @@ class Application
 			'v' => 1,
 			'tid' => 'UA-48372917-7',
 			't' => 'pageview',
-			'cid' => '71a51328-2af3-489d-93d7-594d5a432873',
+			'cid' => Uuid::v4(),
 			'dp' => ServerHelper::getValue($this->server->getRequest()->getServerParams(), 'REQUEST_URI'),
 			'dh' => $this->server->getRequest()->getUri()->getHost(),
 		];
