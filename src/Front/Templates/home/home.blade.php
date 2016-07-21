@@ -75,9 +75,9 @@
         <div class="row">
             <div class="col-md-6 col-md-offset-3">
                 <h2 class="text-center">Unique ID</h2>
-                <pre><code>{{ $host }}/150<strong>?u=123</strong><br>{{ $host }}/150<strong>?u=a042581f4e29026704d</strong></code></pre>
+                <pre><code>{{ $host }}/150<strong>?u=fake@pravatar.com</strong><br>{{ $host }}/150<strong>?u=a042581f4e29026704d</strong></code></pre>
                 <blockquote>
-                    Add a hash then always get same image
+                    Add an identify then always get same image
                 </blockquote>
             </div>
         </div>
