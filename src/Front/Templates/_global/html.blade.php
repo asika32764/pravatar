@@ -61,7 +61,7 @@
                     <hr />
 
                     <footer>
-                        &copy; Pravatar - made by <a href="https://simular.co" target="_blank">Simular</a> {{ $datetime->format('Y') }}
+                        &copy; Pravatar - made by <a href="http://the-allstars.com" target="_blank">Allstars</a> {{ $datetime->format('Y') }}
                     </footer>
                 </div>
             </div>
