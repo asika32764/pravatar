@@ -134,7 +134,7 @@ class Application
 	/**
 	 * analytics
 	 *
-	 * @return  ResponseInterface
+	 * @return  void
 	 */
 	public function __destruct()
 	{
@@ -153,7 +153,7 @@ class Application
 
 		$http = new HttpClient;
 		
-		return $http->post('https://www.google-analytics.com/collect', $data);
+		$http->post('https://www.google-analytics.com/collect', $data);
 	}
 }
 
