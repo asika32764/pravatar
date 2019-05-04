@@ -98,7 +98,7 @@ console:
             - php windwalker migration reset --seed
         deploy:
             - git pull
-            - composer install
+            - composer install --no-dev -o
             - php windwalker run prepare
             - php windwalker migration migrate
             - php windwalker asset makesum
