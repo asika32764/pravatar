@@ -14,6 +14,7 @@
         "windwalker/core" : "~3.0",
         "fzaninotto/faker": "~1.0",
         "swiftmailer/swiftmailer": "~5.0",
+        "windwalker/phoenix": "1.6.*",
         "lyrasoft/luna": "1.4.*",
         "lyrasoft/warder": "1.4.*",
         "lyrasoft/unidev": "1.3.*"

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2894ca1670c4c7b61a9e7a568809a333",
+    "content-hash": "30b4a76d09ea59515192566c523883fa",
     "packages": [
         {
             "name": "asika/minify",
@@ -1702,16 +1702,16 @@
         },
         {
             "name": "windwalker/phoenix",
-            "version": "1.8.5",
+            "version": "1.6.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ventoviro/phoenix.git",
-                "reference": "ec0b35bd80cf4ab670287d13ccd676d241c76f85"
+                "reference": "1e7dcf9f99cf527566d8dedf560f2dd232cf1081"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ventoviro/phoenix/zipball/ec0b35bd80cf4ab670287d13ccd676d241c76f85",
-                "reference": "ec0b35bd80cf4ab670287d13ccd676d241c76f85",
+                "url": "https://api.github.com/repos/ventoviro/phoenix/zipball/1e7dcf9f99cf527566d8dedf560f2dd232cf1081",
+                "reference": "1e7dcf9f99cf527566d8dedf560f2dd232cf1081",
                 "shasum": ""
             },
             "require": {
@@ -1731,10 +1731,7 @@
             "autoload": {
                 "psr-4": {
                     "Phoenix\\": "src/"
-                },
-                "files": [
-                    "src/Utilities/helpers.php"
-                ]
+                }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -1742,7 +1739,7 @@
             ],
             "description": "A powerful RAD framework to support Rapid Application Development.",
             "homepage": "https://github.com/ventoviro/phoenix",
-            "time": "2019-04-28T09:44:23+00:00"
+            "time": "2018-10-07T05:35:57+00:00"
         }
     ],
     "packages-dev": [],
