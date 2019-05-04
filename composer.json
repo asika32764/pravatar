@@ -3,7 +3,7 @@
     "description": "Home Land of LYRASOFT",
     "homepage": "https://github.com/lyrasoft/earth",
     "license": "GNU Lesser General Public License",
-    "minimum-stability": "dev",
+    "minimum-stability": "beta",
     "authors": [
         {
             "name": "Simon Asika",
@@ -27,6 +27,11 @@
         "post-create-project-cmd": [
             "Windwalker\\Composer\\StarterInstaller::rootInstall"
         ]
+    },
+    "config": {
+        "platform": {
+            "php": "5.6"
+        }
     },
     "extra": {
         "branch-alias": {

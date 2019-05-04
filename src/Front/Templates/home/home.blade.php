@@ -43,7 +43,7 @@
     </div>
 
     <div id="share" class="text-center" style="margin-top: 45px">
-        <div class="fb-share-button" data-href="http://pravatar.cc" data-layout="button_count" data-size="large" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fpravatar.cc%2F&amp;src=sdkpreparse">Share</a></div>
+        <div class="fb-share-button" data-href="https://pravatar.cc" data-layout="button_count" data-size="large" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fpravatar.cc%2F&amp;src=sdkpreparse">Share</a></div>
         <a href="https://twitter.com/share" class="twitter-share-button" data-size="large" data-show-count="false">Tweet</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
         <iframe id="patreon-button" src="https://carlo.github.io/patreon-buttons/patreon-btn.html?creator=asika32764&amp;size=large"
             allowtransparency="true"
