@@ -61,9 +61,7 @@
                     <hr />
 
                     <footer>
-                        &copy; Pravatar - made with <span class="glyphicon glyphicon-heart text-danger"></span> by <a href="http://about.asika.tw" target="_blank">Simon Asika</a> {{ $datetime->format('Y') }}
-                        - <a href="https://www.patreon.com/asika32764" target="_blank">Donate me</a> 
-                        - <a href="https://the-allstars.com" target="_blank">Web Design</a>
+                        &copy; Pravatar - made with <span class="glyphicon glyphicon-heart text-danger"></span> by <a href="http://simular.co" target="_blank">Simular</a> {{ $datetime->format('Y') }}
                     </footer>
                 </div>
             </div>
