@@ -61,7 +61,9 @@
                     <hr />
 
                     <footer>
-                        &copy; Pravatar - made with <span class="glyphicon glyphicon-heart text-danger"></span> by <a href="http://simular.co" target="_blank">Simular</a> {{ $datetime->format('Y') }}
+                        &copy; Pravatar - made with <span class="glyphicon glyphicon-heart text-danger"></span> 
+                        by <a href="https://simular.co" target="_blank">Simular</a> {{ $datetime->format('Y') }}
+                        - CDN by <a href="https://www.cloudflare.com/" target="_blank">Cloudflare</a>
                     </footer>
                 </div>
             </div>
