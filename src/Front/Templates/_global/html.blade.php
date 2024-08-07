@@ -63,6 +63,7 @@
                     <footer>
                         &copy; Pravatar - made with <span class="glyphicon glyphicon-heart text-danger"></span> 
                         by <a href="https://simular.co" target="_blank">Simular</a> {{ $datetime->format('Y') }}
+                        - Sponsored by <a href="https://datavideo.com/" target="_blank">Datavideo</a>
                         - CDN by <a href="https://www.cloudflare.com/" target="_blank">Cloudflare</a>
                     </footer>
                 </div>
