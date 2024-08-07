@@ -92,6 +92,19 @@
                 </blockquote>
             </div>
         </div>
+
+        <hr />
+
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+                <h2 class="text-center">Sponsored By</h2>
+                <div class="text-center">
+                    <a href="https://www.datavideo.com" target="_blank">
+                        <img src="https://i.imgur.com/DfezZCX.png" height="50" >
+                    </a>
+                </div>
+            </div>
+        </div>
     </section>
 
     {{-- Add your content --}}
